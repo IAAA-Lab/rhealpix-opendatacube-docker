@@ -1,0 +1,27 @@
+odc-algo
+odc-cloud[ASYNC]
+odc-io
+odc-apps-cloud
+odc-apps-dc-tools
+odc-ui
+odc-dscache
+odc-stac
+
+# To use in Jupyter notebooks.
+scipy
+jupyter==1.0.0
+jupyterlab==3.2.0
+ipyleaflet==0.14.0
+folium
+pandas
+numpy
+xarray
+matplotlib
+geopandas
+tqdm
+click<8.0.0
+python-dateutil==2.7.5
+seaborn==0.11.2
+rHEALPixDGGS==0.5.3
+cartopy==0.20.3
+pyepsg
