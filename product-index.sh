@@ -1,5 +1,7 @@
 #!/bin/bash
 
+mkdir -p data_repo
+
 # Data was 7-zipped with `7z a -v49m "data_repo.7z" data_repo/` as GitHub does not recommend files larger 
 # than 50m (and won't accept files larger than 100m)
 
