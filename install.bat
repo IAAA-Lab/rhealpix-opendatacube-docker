@@ -1,6 +1,7 @@
 docker-compose pull
 docker-compose build
 docker-compose up -d postgres
+docker-compose run checkdb
 docker-compose up -d jupyter
 docker-compose exec -T jupyter conda run -n odc_env datacube -v system init
 
