@@ -11,7 +11,7 @@ services:
       - ./data/pg:/var/lib/postgresql/data
     ports:
       - 5432:5432
-    restart: always
+    restart: unless-stopped
 
   jupyter:
     image: jupyter_conda_odc:0.1
@@ -31,7 +31,7 @@ services:
       - ./notebooks:/notebooks
       - ./products.csv:/products.csv      
       - ./data_repo:/home
-    restart: always
+    restart: unless-stopped
   checkdb:
     image: schaffdev/port_check:latest
     environment:
